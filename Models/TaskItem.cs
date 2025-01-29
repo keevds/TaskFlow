@@ -18,6 +18,8 @@ public class TaskItem
     
     [Required]
     [Column("Description", TypeName = "TITLE")]
+    [MinLength(3)]
+    [MaxLength(200)]
     public required string Description { get; set; }
     
     [Required]
